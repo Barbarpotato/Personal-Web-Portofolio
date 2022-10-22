@@ -7,5 +7,5 @@
 <img src="https://www.svgrepo.com/show/354263/react-spring.svg" width="600" height="300">
 <br>
 <h2>Framer Motion</h2>
-<img src="https://konstantinlebedev.com/static/76d81ec25cd799b15cd16c0b16e869af/cover.png">
+<img src="https://miro.medium.com/max/312/0*Z-jwqyt2k8NbHaQe.png">
 </div>
