@@ -1,14 +1,13 @@
-[debug] [2022-10-22T05:46:35.181Z] ----------------------------------------------------------------------
-[debug] [2022-10-22T05:46:35.182Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darmawan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-10-22T05:46:35.183Z] CLI Version:   11.6.0
-[debug] [2022-10-22T05:46:35.183Z] Platform:      win32
-[debug] [2022-10-22T05:46:35.183Z] Node Version:  v16.13.0
-[debug] [2022-10-22T05:46:35.183Z] Time:          Sat Oct 22 2022 13:46:35 GMT+0800 (Singapore Standard Time)
-[debug] [2022-10-22T05:46:35.184Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T06:11:22.363Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T06:11:22.364Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darmawan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-22T06:11:22.365Z] CLI Version:   11.6.0
+[debug] [2022-10-22T06:11:22.365Z] Platform:      win32
+[debug] [2022-10-22T06:11:22.365Z] Node Version:  v16.13.0
+[debug] [2022-10-22T06:11:22.366Z] Time:          Sat Oct 22 2022 14:11:22 GMT+0800 (Singapore Standard Time)
+[debug] [2022-10-22T06:11:22.366Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-10-22T05:46:35.186Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-10-22T05:46:35.239Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-10-22T05:46:35.240Z] > authorizing via signed-in user (darmawanjr88@gmail.com)
+[debug] [2022-10-22T06:11:22.410Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T06:11:22.410Z] > authorizing via signed-in user (darmawanjr88@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -24,5 +23,30 @@ Before we get started, keep in mind:
 
   * You are initializing within an existing Firebase project directory
 
-[debug] [2022-10-22T05:46:35.929Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2022-10-22T05:46:35.929Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-22T06:11:46.943Z] Using project from CLI flag: darmajr94
+[debug] [2022-10-22T06:11:46.944Z] > refreshing access token with scopes: []
+[debug] [2022-10-22T06:11:46.946Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-22T06:11:46.946Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-22T06:11:47.282Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-22T06:11:47.282Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-22T06:11:47.289Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 [none]
+[debug] [2022-10-22T06:11:47.821Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 200
+[debug] [2022-10-22T06:11:47.821Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 {"projectId":"darmajr94","projectNumber":"1083405724992","displayName":"DarmaJr94","name":"projects/darmajr94","resources":{"hostingSite":"darmajr94"},"state":"ACTIVE","etag":"1_224177ed-fb33-452d-9a16-62cf2d4a3c1e"}
+[info] i  Using project darmajr94 (DarmaJr94) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at C:\Users\Darmawan\OneDrive\Documents\Personal-Web-Portofolio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=137986151&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
