@@ -1,52 +1,49 @@
-[debug] [2022-10-22T06:11:22.363Z] ----------------------------------------------------------------------
-[debug] [2022-10-22T06:11:22.364Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darmawan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-10-22T06:11:22.365Z] CLI Version:   11.6.0
-[debug] [2022-10-22T06:11:22.365Z] Platform:      win32
-[debug] [2022-10-22T06:11:22.365Z] Node Version:  v16.13.0
-[debug] [2022-10-22T06:11:22.366Z] Time:          Sat Oct 22 2022 14:11:22 GMT+0800 (Singapore Standard Time)
-[debug] [2022-10-22T06:11:22.366Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T06:20:54.335Z] ----------------------------------------------------------------------
+[debug] [2022-10-22T06:20:54.336Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darmawan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-22T06:20:54.337Z] CLI Version:   11.6.0
+[debug] [2022-10-22T06:20:54.337Z] Platform:      win32
+[debug] [2022-10-22T06:20:54.337Z] Node Version:  v16.13.0
+[debug] [2022-10-22T06:20:54.337Z] Time:          Sat Oct 22 2022 14:20:54 GMT+0800 (Singapore Standard Time)
+[debug] [2022-10-22T06:20:54.338Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-10-22T06:11:22.410Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-10-22T06:11:22.410Z] > authorizing via signed-in user (darmawanjr88@gmail.com)
+[debug] [2022-10-22T06:20:54.379Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-22T06:20:54.379Z] > authorizing via signed-in user (darmawanjr88@gmail.com)
+[debug] [2022-10-22T06:20:54.379Z] [iam] checking project darmajr94 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-22T06:20:54.381Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/darmajr94:testIamPermissions [none]
+[debug] [2022-10-22T06:20:54.381Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/darmajr94:testIamPermissions x-goog-quota-user=projects/darmajr94
+[debug] [2022-10-22T06:20:54.381Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/darmajr94:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-22T06:20:55.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/darmajr94:testIamPermissions 200
+[debug] [2022-10-22T06:20:55.671Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/darmajr94:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-22T06:20:55.672Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 [none]
+[debug] [2022-10-22T06:20:56.223Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 200
+[debug] [2022-10-22T06:20:56.223Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 {"projectId":"darmajr94","projectNumber":"1083405724992","displayName":"DarmaJr94","name":"projects/darmajr94","resources":{"hostingSite":"darmajr94"},"state":"ACTIVE","etag":"1_224177ed-fb33-452d-9a16-62cf2d4a3c1e"}
 [info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  C:\Users\Darmawan\OneDrive\Documents\Personal-Web-Portofolio
-
-Before we get started, keep in mind:
-
-  * You are initializing within an existing Firebase project directory
-
+[info] === Deploying to 'darmajr94'...
 [info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2022-10-22T06:11:46.943Z] Using project from CLI flag: darmajr94
-[debug] [2022-10-22T06:11:46.944Z] > refreshing access token with scopes: []
-[debug] [2022-10-22T06:11:46.946Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2022-10-22T06:11:46.946Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-10-22T06:11:47.282Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2022-10-22T06:11:47.282Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-10-22T06:11:47.289Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 [none]
-[debug] [2022-10-22T06:11:47.821Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 200
-[debug] [2022-10-22T06:11:47.821Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 {"projectId":"darmajr94","projectNumber":"1083405724992","displayName":"DarmaJr94","name":"projects/darmajr94","resources":{"hostingSite":"darmajr94"},"state":"ACTIVE","etag":"1_224177ed-fb33-452d-9a16-62cf2d4a3c1e"}
-[info] i  Using project darmajr94 (DarmaJr94) 
-[info] 
-=== Hosting:github Setup
-[info] 
-[info] i  Detected a .git folder at C:\Users\Darmawan\OneDrive\Documents\Personal-Web-Portofolio 
-[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
-[info] 
-[info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=137986151&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
-[info] 
-[info] Waiting for authentication...
+[info] i  deploying hosting 
+[debug] [2022-10-22T06:20:56.225Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 [none]
+[debug] [2022-10-22T06:20:56.730Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 200
+[debug] [2022-10-22T06:20:56.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/darmajr94 {"projectId":"darmajr94","projectNumber":"1083405724992","displayName":"DarmaJr94","name":"projects/darmajr94","resources":{"hostingSite":"darmajr94"},"state":"ACTIVE","etag":"1_224177ed-fb33-452d-9a16-62cf2d4a3c1e"}
+[debug] [2022-10-22T06:20:56.732Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions [none]
+[debug] [2022-10-22T06:20:56.732Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-22T06:20:57.955Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions 200
+[debug] [2022-10-22T06:20:57.955Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions {"name":"projects/1083405724992/sites/darmajr94/versions/bff2f732421cf5b6","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[darmajr94]: beginning deploy... 
+[info] i  hosting[darmajr94]: found 23 files in build 
+[debug] [2022-10-22T06:20:57.965Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-22T06:20:58.183Z] [hosting] hash cache [YnVpbGQ] stored for 23 files
+[debug] [2022-10-22T06:20:58.183Z] [hosting][hash queue][FINAL] {"max":211,"min":2,"avg":31.391304347826086,"active":0,"complete":23,"success":23,"errored":0,"retried":0,"total":23,"elapsed":215}
+[debug] [2022-10-22T06:20:58.184Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions/bff2f732421cf5b6:populateFiles [none]
+[debug] [2022-10-22T06:20:58.184Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions/bff2f732421cf5b6:populateFiles {"files":{"/favicon.ico":"24ee99443a12a153962326ca4776df7ddbc22af0f082ab75fb6785eb728f4fde","/manifest.json":"33bf85c9e7a5e4f418f806b1f9b50d4d4f5e75759f4e411e34c656b5bf22ab83","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"171b39e88b7580d93fd3b06bde8508d68738609253924c29d93042c69b78b51a","/index.html":"04bd52fdc3261aae332886eabd1f619ae4dcb27c31084ef87dd8463cac8a2d9c","/static/js/787.b7af92ad.chunk.js":"b5fe9ad03384802ca5064d1f2d1d1a5abd1330736f463516a5e134fe6c955de1","/static/js/main.b65219d0.js.LICENSE.txt":"bf1e36fec4bdfdee491f652e2d94579700e8960d1f0acd9768debd321e87ef82","/static/js/787.b7af92ad.chunk.js.map":"e8786779101f77de91a6396d4cb304f8362dcf98c07b1d2abf59346e1d17f263","/static/media/Express.70ddfe7797df6357bf46.png":"7c8dcf949cd51e9e6ec6f8410d613b6503f3853f8d6a08e69884dfd41664a176","/static/media/Mongoose.e5d1d2c4ab8b8e124360.png":"34151f7409419d02cfc4eb9709c5497e45c0d79aa24f3ff45b67da10279e6093","/static/media/Tensorflow.0231bc041211381b36dd.png":"aa48fc8fb1925f7610ffb0f25a6098f54352ce7ab075eb639b7213daadfa9e65","/static/media/Python.f45b1d5ff24335907c89.png":"2b936fd237e92c25e55c08ac581769f2d040f56f8a3536e732fa771a72b2987f","/static/media/React.ca0606dcf7aa722a636d.png":"3843c64b0fec7ff79154f61323fba6cdb11bdb511dd72bc99551aeffb3ee1774","/static/media/Mysql.879262d552b520de3f02.png":"701d555affbdc2584ba3dd962bde5ea31f0633a5afe0af029b1eaa75e3fc7ba3","/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2":"38d88317bebc79b4945a679daadd47daebbadc5cd13b41473143394ca7e8d892","/static/css/main.123ae963.css":"27e58e95a956c618716790967b9bf7c94e9eb507c941f993131b49d0c4ff42af","/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff":"b51c2c79cce89b7c5947672c13f735c24ee1a9f8f6ebdb957c5fdfe567f27d37","/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf":"d9cef07d4f3569883fb4c3db76acea5478cef80775d012841eb78a42e60a8e89","/static/media/fontawesome-webfont.8b43027f47b20503057d.eot":"4944999b255adf473d5b86b300eba33737e8f598c17f24e82a28582393331209","/static/js/main.b65219d0.js":"797e880ed1973fad06ad009d6d00ef1c169104f3c97452872cfbd1be6e05778d","/static/css/main.123ae963.css.map":"79004e982287afc26c255787663d60e028afa93a29da0d5eae536eaab55272fb","/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg":"9b74ca5333a9ca156ae6ef0920d5bc42d283e95d25651bf4375404f0407a63ab","/static/js/main.b65219d0.js.map":"861599fff35df7a0ffa14184d7515ca1e93bf95594bb7ba498bfdc6048896989"}}
+[debug] [2022-10-22T06:20:59.095Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions/bff2f732421cf5b6:populateFiles 200
+[debug] [2022-10-22T06:20:59.095Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1083405724992/sites/darmajr94/versions/bff2f732421cf5b6:populateFiles {"uploadRequiredHashes":["171b39e88b7580d93fd3b06bde8508d68738609253924c29d93042c69b78b51a","04bd52fdc3261aae332886eabd1f619ae4dcb27c31084ef87dd8463cac8a2d9c","861599fff35df7a0ffa14184d7515ca1e93bf95594bb7ba498bfdc6048896989","797e880ed1973fad06ad009d6d00ef1c169104f3c97452872cfbd1be6e05778d"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files"}
+[debug] [2022-10-22T06:20:59.096Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/171b39e88b7580d93fd3b06bde8508d68738609253924c29d93042c69b78b51a [none]
+[debug] [2022-10-22T06:20:59.096Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/171b39e88b7580d93fd3b06bde8508d68738609253924c29d93042c69b78b51a [stream]
+[debug] [2022-10-22T06:20:59.096Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/04bd52fdc3261aae332886eabd1f619ae4dcb27c31084ef87dd8463cac8a2d9c [none]
+[debug] [2022-10-22T06:20:59.096Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/04bd52fdc3261aae332886eabd1f619ae4dcb27c31084ef87dd8463cac8a2d9c [stream]
+[debug] [2022-10-22T06:20:59.097Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/861599fff35df7a0ffa14184d7515ca1e93bf95594bb7ba498bfdc6048896989 [none]
+[debug] [2022-10-22T06:20:59.097Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/861599fff35df7a0ffa14184d7515ca1e93bf95594bb7ba498bfdc6048896989 [stream]
+[debug] [2022-10-22T06:20:59.097Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/797e880ed1973fad06ad009d6d00ef1c169104f3c97452872cfbd1be6e05778d [none]
+[debug] [2022-10-22T06:20:59.097Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/darmajr94/versions/bff2f732421cf5b6/files/797e880ed1973fad06ad009d6d00ef1c169104f3c97452872cfbd1be6e05778d [stream]
+[debug] [2022-10-22T06:20:59.098Z] [hosting][populate queue][FINAL] {"max":915,"min":915,"avg":915,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":917}
+[debug] [2022-10-22T06:20:59.098Z] [hosting] uploads queued: 4
