@@ -1,0 +1,332 @@
+@media only screen and (min-height:700px) and (min-width:1365px) {
+
+    .navigation {
+        margin-top: 3600px;
+    }
+
+    .navLink {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        transition: 0.3s;
+    }
+
+    .navlinkDark {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .navLink:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        padding-top: 40px;
+        color: black;
+    }
+
+    .navlinkDark:hover {
+        text-decoration: underline;
+        font-size: 30px;
+        padding-top: 40px;
+        color: white;
+    }
+
+
+    .Main {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .darkMain {
+        color: white;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .title {
+        --c: black;
+        /* the color */
+
+        color: #0000;
+        background:
+            linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+            linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        transition: 0.5s;
+    }
+
+    .darkTitle {
+        --c: yellow;
+        /* the color */
+
+        color: white;
+        background:
+            linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+            linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+        -webkit-background-clip: text, padding-box;
+        background-clip: text, padding-box;
+        transition: 0.5s;
+    }
+
+    .title:hover {
+        --_p: 100%;
+    }
+
+    .darkTitle:hover {
+        color: black;
+        --_p: 100%;
+    }
+
+    body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        margin: 0;
+        cursor: pointer;
+        padding: 0 .1em;
+        font-size: 5em;
+    }
+
+    p {
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    .content {
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .accordion-button {
+        color: white;
+        background-color: black !important;
+    }
+
+    .accordion-body {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: white;
+    }
+
+    .carousel-item {
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 300px;
+    }
+
+    .carousel-caption {
+        font-size: 10px;
+        text-align: center;
+        color: black;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 50px;
+        width: 50px;
+        outline: black;
+        background-color: black;
+        background-size: 100%, 100%;
+        border-radius: 20%;
+        border: 2px solid black;
+    }
+
+    .horizontal {
+        border: 2px solid black;
+    }
+
+    .darkhorizontal {
+        border: 2px solid white;
+    }
+
+    .btn-social-icon {
+        font-size: 18px;
+        transition: ease-in-out 0.1s;
+    }
+
+    .btn-social-icon:hover {
+        transform: rotate(360deg);
+        font-size: 45px;
+        padding-top: 10px;
+        transition: ease-in-out 0.2s;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .Main {
+        color: black;
+
+        padding: 10px;
+    }
+
+    .darkMain {
+        color: white;
+
+    }
+}
+
+.navLink {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    transition: 0.3s;
+}
+
+.navlinkDark {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.navLink:hover {
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 40px;
+    color: black;
+}
+
+.navlinkDark:hover {
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 40px;
+    color: white;
+}
+
+h3 {
+    font-family: sans-serif;
+    margin: 0;
+    cursor: pointer;
+    padding: 0 .1em;
+    font-size: 5em;
+}
+
+.title {
+    --c: black;
+    /* the color */
+
+    color: #0000;
+    background:
+        linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.darkTitle {
+    --c: yellow;
+    /* the color */
+
+    color: white;
+    background:
+        linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%))/200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) 100% no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+}
+
+.title:hover {
+    --_p: 100%;
+}
+
+.darkTitle:hover {
+    color: black;
+    --_p: 100%;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.darkMain {
+    color: white;
+}
+
+.content {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.accordion-button {
+    color: white;
+    background-color: black !important;
+}
+
+.accordion-body {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+}
+
+.carousel-item {
+    height: 320px;
+    font-size: 10px;
+}
+
+.carousel-caption {
+    font-size: 5px;
+    text-align: center;
+    color: black;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: black;
+    background-size: 100%, 100%;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
+.horizontal {
+    border: 2px solid black;
+}
+
+.darkhorizontal {
+    border: 2px solid white;
+}
+
+.btn-social-icon {
+    font-size: 18px;
+    transition: ease-in-out 0.1s;
+}
+
+.btn-social-icon:hover {
+    transform: rotate(360deg);
+    font-size: 45px;
+    padding-top: 10px;
+    transition: ease-in-out 0.2s;
+}
