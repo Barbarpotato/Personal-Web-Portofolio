@@ -28,7 +28,7 @@ function Quotes() {
                     setQuote(quote => ({ ...quote, ...getQuote }));
                 }
                 else {
-                    const getQuote = { text: data[0], author: 'Unkown' };
+                    const getQuote = { text: data[0], author: data[1] };
                     setQuote(quote => ({ ...quote, ...getQuote }));
                 }
             })
